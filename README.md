@@ -1,4 +1,4 @@
-# AIO Tests for Jira Cypress Reporter
+# AIO Tests for Jira Newman Reporter
 [AIO Tests for Jira](https://marketplace.atlassian.com/apps/1222843/aio-tests-for-jira) is a Jira-native test management app covering the entire QA lifecycle with Test Cases, Cycles, Reports, Automation, Dashboards, providing a one stop shop for all your testing needs.
 
 With it's Newman reporter, AIO Tests simplifies reporting of results from the automated Postman tests to AIO Tests for Jira.
