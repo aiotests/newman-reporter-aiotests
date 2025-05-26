@@ -1,6 +1,6 @@
 {
   "name": "newman-reporter-aiotests",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Newman Custom reporter to report results to AIO Tests - Jira",
   "main": "index.js",
   "keywords": [
