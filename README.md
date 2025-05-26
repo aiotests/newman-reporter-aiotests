@@ -81,6 +81,12 @@ newman.run({
         
         //bddForceUpdateCase - defaults to true, updates step changes in AIO Case with changes in request data
         'bddForceUpdateCase': true 
+                
+        //updateOnlyRunStatus - defaults to false, if checked, step matching is skipped and only run status is updated.
+        'updateOnlyRunStatus': true 
+                        
+        //folderHierarchy - Target folder for new test cases. Supports comma-separated folder hierarchy.
+        'folderHierarchy': 'Smoke,Basics'    
      }
    }
 });
@@ -108,6 +114,8 @@ newman run /path/to/collection.json -r aiotests
     --reporter-aiotests-createNewRun 'true'
     --reporter-aiotests-createCase 'true'
     --reporter-aiotests-bddForceUpdateCase 'true'
+    --reporter-aiotests-updateOnlyRunStatus 'true'
+    --reporter-aiotests-folderHierarchy 'Smoke,Basics'
     
 ```
 
