@@ -86,7 +86,10 @@ newman.run({
         'updateOnlyRunStatus': true 
                         
         //folderHierarchy - Target folder for new test cases. Supports comma-separated folder hierarchy.
-        'folderHierarchy': 'Smoke,Basics'    
+        'folderHierarchy': 'Smoke,Basics',
+
+        //createBatch - defaults to false, Set to true to use the batch import endpoint (import/results/batch) instead of the default single import endpoint (import/results)
+        'createBatch': false
      }
    }
 });
@@ -106,7 +109,7 @@ newman run /path/to/collection.json -r aiotests
     --reporter-aiotests-enableReporting true
     --reporter-aiotests-jiraProjectId 'PROJ1'
     --reporter-aiotests-aioApiToken 'youapitoken'
-    --reporter-aiotests-jiraServer 'youapitoken'
+    --reporter-aiotests-jiraServer '<your server url, if on Atlassian DC>'
     --reporter-aiotests-jiraPat '<jiraPatToken>'
     --reporter-aiotests-createNewCycle 'true'
     --reporter-aiotests-newCycleTitle 'Daily API Smoke'
@@ -116,7 +119,8 @@ newman run /path/to/collection.json -r aiotests
     --reporter-aiotests-bddForceUpdateCase 'true'
     --reporter-aiotests-updateOnlyRunStatus 'true'
     --reporter-aiotests-folderHierarchy 'Smoke,Basics'
-    
+    --reporter-aiotests-createBatch 'true'
+
 ```
 
 # Logging
